@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太空字节 AstrByte | 太空数据基础设施</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 顶部导航栏 -->
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <!-- 引用本地Logo图片 -->
+                <a href="index.html"><img src="logo.png" alt="Logo" class="logo-img"></a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" >首页</a></li>
+                    <li><a href="earthdata.html" >太空数仓™</a></li>
+                    <li><a href="xbyte.html" >Xbyte™</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" >产品与方案</a>
+                    </li>
+                    <li><a href="media.html" >媒体库</a></li>
+                    <li><a href="about.html" >关于我们</a></li>
+                </ul>
+                <!-- 移动端汉堡菜单图标 -->
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 第一屏：Hero Section (品牌形象) -->
+    <section id="home" class="hero-section">
+        <div class="bg-overlay"></div>
+        <div class="hero-content scroll-reveal">
+            <h1>连接太空与数据的未来</h1>
+            <p>SPACE DATA CENTER & AI INFRASTRUCTURE</p>
+            <a href="#stats" class="btn-ghost">探索更多</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- 第二屏：轮播新闻 -->
+    <section class="news-ticker">
+        <div class="container">
+            <div class="ticker-wrapper">
+                <span class="tag">最新动态</span>
+                <div class="ticker-text">AstrByte 成功部署第13个在轨数据节点，开启太空边缘计算新纪元。</div>
+                <a href="#" class="read-more">阅读详情 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三屏：数据概览 (HUD 仪表盘) -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">运营数据概览</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-unit">Tbyte</div>
+                    <div class="stat-label">在轨存储容量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="216">0</div>
+                    <div class="stat-unit">Gbyte</div>
+                    <div class="stat-label">在轨数据量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="13">0</div>
+                    <div class="stat-unit">个</div>
+                    <div class="stat-label">已注册用户数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-unit">次</div>
+                    <div class="stat-label">共计上传数据</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四屏：去往太空 (太空数仓) -->
+    <section id="earthdata" class="split-section right-text">
+        <!-- 这里的图片建议替换为高清视频截图 -->
+        <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');"></div>
+        <div class="content-box scroll-reveal">
+            <h3>太空数仓™ (EarthData)</h3>
+            <h2>数据前往太空的意义</h2>
+            <p>不仅仅是存储，更是人类文明的备份。通过独立子域名访问，体验前所未有的安全与永恒。</p>
+            <a href="earthdata.html" target="_blank" class="btn-primary">进入太空数仓</a>
+        </div>
+    </section>
+
+    <!-- 第五屏：来自太空 (Xbyte) -->
+    <section id="xbyte" class="split-section left-text">
+        <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1614728853913-1e22ba61d52b?q=80&w=2066&auto=format&fit=crop');"></div>
+        <div class="content-box scroll-reveal">
+            <h3>Xbyte™</h3>
+            <h2>来自星空的礼物</h2>
+            <p>每一台 Xbyte 设备都连接着浩瀚宇宙。扫码绑定，解锁来自太空的独家金句与IP内容。</p>
+            <a href="xbyte.html" target="_blank" class="btn-primary">探索 Xbyte</a>
+        </div>
+    </section>
+
+    <!-- 第六屏：合作伙伴 -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">携手合作伙伴 共筑太空数据中心</h2>
+            <div class="partners-grid">
+                <!-- 模拟Logo位置 -->
+                <div class="partner-logo">Space Partner A</div>
+                <div class="partner-logo">Data Corp B</div>
+                <div class="partner-logo">AI Lab C</div>
+                <div class="partner-logo">Future Tech D</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第七屏：关于与联系 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>关于我们</h2>
+                    <p>太空字节致力于构建星际间的数据高速公路。我们结合航天技术与人工智能，为人类提供永续的数据存储解决方案。</p>
+                    <div class="contact-info">
+                        <h3>联系我们</h3>
+                        <p>Email: business@astrbyte.com</p>
+                        <p>Tel: +86 10 8888 8888</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="social-card">
+                        <span>抖音官方号</span>
+                        <div class="qr-placeholder">二维码</div>
+                    </div>
+                    <div class="social-card">
+                        <span>小红书官方号</span>
+                        <div class="qr-placeholder">二维码</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 AstrByte Inc. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">服务条款</a></li>
+                <li><a href="#">京ICP备12345678号</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

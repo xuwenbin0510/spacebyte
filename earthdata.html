@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太空数仓™ | EarthData System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 (保持一致) -->
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo"><a href="index.html"><img src="logo.png" alt="Logo" class="logo-img"></a></div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="earthdata.html" style="color:var(--accent-color)">太空数仓™</a></li>
+                    <li><a href="xbyte.html">Xbyte™</a></li>
+                    <li><a href="products.html">产品与方案</a></li>
+                    <li><a href="media.html">媒体库</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 顶部头图 -->
+    <section class="sub-hero" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072');">
+        <div class="bg-overlay"></div>
+        <div class="container scroll-reveal">
+            <h1>太空数仓™ (EarthData)</h1>
+            <p>通过独立子域名访问的航天级数据存储服务</p>
+        </div>
+    </section>
+
+    <!-- 业务特性 -->
+    <section class="container">
+        <div class="feature-grid">
+            <div class="feature-card scroll-reveal">
+                <h3>极致安全</h3>
+                <p>数据存储于近地轨道，物理隔离地面自然灾害与人为干扰。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <h3>全球访问</h3>
+                <p>依托星链技术，在全球任何角落均可高速访问您的数据资产。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <h3>永久备份</h3>
+                <p>为人类文明提供异地容灾备份，数据留存长达百年。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 运营数据展示 -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">实时运营状态</h2>
+            <!-- 复用首页的Stats Grid，实际开发可换成图表 -->
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">系统可用性</div></div>
+                <div class="stat-item"><div class="stat-number">24ms</div><div class="stat-label">平均延迟</div></div>
+                <div class="stat-item"><div class="stat-number">AES-256</div><div class="stat-label">加密标准</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 登录入口 -->
+    <section class="login-section">
+        <div class="container scroll-reveal">
+            <h2>准备好进入太空了吗？</h2>
+            <p style="margin-bottom:30px; color:#888;">访问太空数仓系统需要企业级授权账号</p>
+            <a href="#" class="btn-primary">登录太空数仓系统</a>
+            <p style="margin-top:20px; font-size:0.8rem;">域名: earthdata.space</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 AstrByte Inc. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">服务条款</a></li>
+                <li><a href="#">京ICP备12345678号</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
