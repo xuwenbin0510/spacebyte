@@ -55,7 +55,7 @@ ul { list-style: none; }
 }
 
 .logo-img {
-    height: 40px; /* 根据你的Logo图片实际比例调整 */
+    height: 65px; /* 根据你的Logo图片实际比例调整 */
     width: auto;
     display: block;
 }
