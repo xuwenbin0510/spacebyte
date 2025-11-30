@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>媒体库 | 用户故事与案例</title>
+    <title>太空字节 太空数据中心运营商 | 用户故事与案例</title>
     <link rel="stylesheet" href="style.css">
+    <script src="content.js"></script>
 </head>
 <body>
     <header id="navbar">
@@ -12,12 +13,12 @@
             <div class="logo"><a href="index.html"><img src="logo.png" alt="Logo" class="logo-img"></a></div>
             <nav>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="earthdata.html">太空数仓™</a></li>
-                    <li><a href="xbyte.html" >Xbyte™</a></li>
-                    <li><a href="products.html" >产品与方案</a></li>
-                    <li><a href="media.html" style="color:var(--accent-color)">媒体库</a></li>
-                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="index.html"  data-key="navbar.home"></a></li>
+                    <li><a href="earthdata.html"  data-key="navbar.earthdata"></a></li>
+                    <li><a href="xbyte.html"  data-key="navbar.xbyte"></a></li>
+                    <li><a href="products.html"  data-key="navbar.products"></a></li>
+                    <li><a href="media.html"  data-key="navbar.media"  style="color:var(--accent-color)" ></a></li>
+                    <li><a href="about.html"  data-key="navbar.about"></a></li>
                 </ul>
                 <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
             </nav>
@@ -25,64 +26,74 @@
     </header>
 
     <div class="container" style="padding-top:120px; padding-bottom:80px;">
-        <h2 class="section-title">媒体中心</h2>
+        <h2 class="section-title" data-key="media.title"></h2>
         
         <!-- 过滤器 -->
         <div class="filter-bar">
-            <button class="filter-btn active">全部</button>
-            <button class="filter-btn">用户故事</button>
-            <button class="filter-btn">客户案例</button>
-            <button class="filter-btn">发射实录</button>
+            <button class="filter-btn active" data-filter="all" data-key="media.filters.all"></button>
+            <button class="filter-btn" data-filter="story" data-key="media.filters.story"></button>
+            <button class="filter-btn" data-filter="case" data-key="media.filters.case"></button>
+            <button class="filter-btn" data-filter="launch" data-key="media.filters.launch"></button>  
+            <button class="filter-btn" data-filter="interview" data-key="media.filters.interview"></button>   
         </div>
 
         <!-- 视频网格 -->
         <div class="media-grid">
-            <!-- 视频卡片 1 -->
-            <div class="media-card scroll-reveal">
-                <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=1000" class="media-thumb" alt="Video Thumb">
+            <!-- 视频卡片 1 用户故事-->
+            <div class="media-card scroll-reveal"  data-category="story" data-video-key="media.card1.videoUrl">
+                <img src="images/media1.jpeg" class="media-thumb" alt="Video Thumb">
                 <div class="play-icon">▶</div>
                 <div class="media-info">
-                    <span class="media-tag">#用户故事</span>
-                    <h4>数据如何改变农业监测</h4>
+                    <span class="media-tag" data-key="media.card1.tag"></span>
+                    <h4 data-key="media.card1.title"></h4>
                 </div>
             </div>
-            <!-- 视频卡片 2 -->
-            <div class="media-card scroll-reveal">
-                <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1000" class="media-thumb" alt="Video Thumb">
+            <!-- 视频卡片 2 发射实录-->
+            <div class="media-card scroll-reveal" data-category="launch" data-video-key="media.card2.videoUrl">
+                <img src="images/media2.jpeg" class="media-thumb" alt="Video Thumb">
                 <div class="play-icon">▶</div>
                 <div class="media-info">
-                    <span class="media-tag">#发射实录</span>
-                    <h4>ASTR-1 卫星发射全过程</h4>
+                    <span class="media-tag" data-key="media.card2.tag"></span>
+                    <h4 data-key="media.card2.title"></h4>
                 </div>
             </div>
-            <!-- 视频卡片 3 -->
-            <div class="media-card scroll-reveal">
-                <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=1000" class="media-thumb" alt="Video Thumb">
+            <!-- 视频卡片 3 客户案例-->
+            <div class="media-card scroll-reveal" data-category="case" data-video-key="media.card3.videoUrl">
+                <img src="images/media3.jpeg" class="media-thumb" alt="Video Thumb">
                 <div class="play-icon">▶</div>
                 <div class="media-info">
-                    <span class="media-tag">#客户案例</span>
-                    <h4>某金融机构的异地容灾方案</h4>
+                    <span class="media-tag" data-key="media.card3.tag"></span>
+                    <h4 data-key="media.card3.title"></h4>
                 </div>
             </div>
-             <!-- 视频卡片 4 -->
-             <div class="media-card scroll-reveal">
-                <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?q=80&w=1000" class="media-thumb" alt="Video Thumb">
+             <!-- 视频卡片 4 技术访谈-->
+             <div class="media-card scroll-reveal" data-category="interview" data-video-key="media.card4.videoUrl">
+                <img src="images/media4.jpeg" class="media-thumb" alt="Video Thumb">
                 <div class="play-icon">▶</div>
-                <div class="media-info">
-                    <span class="media-tag">#技术访谈</span>
-                    <h4>CTO谈下一代星际网络</h4>
+                <div class="media-info">    
+                    <span class="media-tag" data-key="media.card4.tag"></span>
+                    <h4 data-key="media.card4.title"></h4>
                 </div>
             </div>
         </div>
     </div>
-
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <!-- 这里放视频，暂时用一段示例视频 -->
+            <video id="modal-video" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                您的浏览器不支持 HTML5 视频。
+            </video>
+        </div>
+    </div>
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2025 AstrByte Inc. All rights reserved.</p>
+            <p data-key="footer.copyright"></p>
             <ul class="footer-links">
-                <li><a href="#">隐私政策</a></li>
-                <li><a href="#">服务条款</a></li>
-                <li><a href="#">京ICP备12345678号</a></li>
+                <li><a href="#" data-key="footer.privacy"></a></li>
+                <li><a href="#" data-key="footer.terms"></a></li>
+                <li><a href="https://beian.miit.gov.cn/" data-key="footer.icp" target="_blank"></a></li>
             </ul>
         </div>
     </footer>
