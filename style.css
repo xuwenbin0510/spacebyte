@@ -583,3 +583,40 @@ footer { padding: 50px 0; background: #050505; color: #555; font-size: 0.85rem; 
 }
 
 .close-btn:hover { color: var(--accent-color); }
+/* --- 二维码点击放大样式 --- */
+
+/* 1. 让二维码鼠标变成放大镜，提示可点击 */
+.qr-img {
+    cursor: zoom-in; 
+    transition: transform 0.3s ease;
+}
+
+.qr-img:hover {
+    transform: scale(1.05); /* 悬停时轻微放大 */
+}
+
+/* 2. 图片弹窗内的图片样式 */
+.modal-content-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 90%;  /* 保证不超过屏幕宽度 */
+    max-height: 90%; /* 保证不超过屏幕高度 */
+    width: auto;
+    height: auto;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+    background-color: #fff; /* 加上白底，防止透明二维码在黑背景看不清 */
+    padding: 20px;
+}
+
+/* 3. 关闭按钮微调 (复用之前的样式，但针对图片弹窗调整位置) */
+.img-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2001;
+}

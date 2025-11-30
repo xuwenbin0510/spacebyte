@@ -59,12 +59,12 @@
         <div class="media-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
             <div class="social-card" style="width:100%; border:1px solid #333;">
                 <h3>抖音官方号</h3>
-                <img src="images/douyin.jpg" class="qr-img" alt="抖音二维码">
+                <img src="images/douyin.png" class="qr-img" alt="抖音二维码">
                 <p style="margin-top:10px; font-size:0.8rem; color:#666;">扫码观看技术硬核视频</p>
             </div>
             <div class="social-card" style="width:100%; border:1px solid #333;">
                 <h3>小红书官方号</h3>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Xiaohongshu" class="qr-img" alt="小红书二维码">
+                <img src="images/redbook.png" class="qr-img" alt="小红书二维码">
                 <p style="margin-top:10px; font-size:0.8rem; color:#666;">扫码查看幕后花絮</p>
             </div>
             <div class="social-card" style="width:100%; border:1px solid #333;">
@@ -74,7 +74,12 @@
             </div>
         </div>
     </section>
-
+<div id="img-modal" class="modal">
+        <!-- 关闭按钮 -->
+        <span class="close-btn img-close">&times;</span>
+        <!-- 用于展示大图的容器 -->
+        <img class="modal-content-img" id="img-modal-content">
+    </div>
     <footer>
         <div class="container footer-content">
             <p data-key="footer.copyright"></p>

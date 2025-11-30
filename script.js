@@ -248,4 +248,39 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    // ==========================================
+    // 9. 图片/二维码放大功能 (Global)
+    // ==========================================
+    const imgModal = document.getElementById('img-modal');
+    
+    // 只有当前页面有图片弹窗容器时才执行
+    if (imgModal) {
+        const modalImg = document.getElementById('img-modal-content');
+        const imgCloseBtn = document.querySelector('.img-close');
+        // 获取页面上所有的二维码图片
+        const qrImages = document.querySelectorAll('.qr-img');
+
+        // 1. 绑定点击事件
+        qrImages.forEach(img => {
+            img.addEventListener('click', () => {
+                imgModal.style.display = "block";
+                modalImg.src = img.src; // 把被点图片的地址给弹窗
+            });
+        });
+
+        // 2. 点击关闭按钮
+        if (imgCloseBtn) {
+            imgCloseBtn.addEventListener('click', () => {
+                imgModal.style.display = "none";
+            });
+        }
+
+        // 3. 点击背景关闭
+        imgModal.addEventListener('click', (e) => {
+            // 注意：这里要判断点击的是遮罩层(imgModal)本身，而不是图片(modalImg)
+            if (e.target === imgModal) {
+                imgModal.style.display = "none";
+            }
+        });
+    }
 });
