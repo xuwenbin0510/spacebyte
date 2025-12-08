@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tagEl.classList.add('fade-out');
             newsTextEl.classList.add('fade-out');
             linkEl.classList.add('fade-out');
-
+            linkEl.href = item.url;
             setTimeout(() => {
                 tagEl.innerText = item.tag;
                 newsTextEl.innerText = item.text;
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-    // ==========================================
+     // ==========================================
     // 9. 图片/二维码放大功能 (Global)
     // ==========================================
     const imgModal = document.getElementById('img-modal');

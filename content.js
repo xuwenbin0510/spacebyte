@@ -5,7 +5,7 @@ const siteContent = {
     navbar: {
         logoAlt: "太空字节 Logo",
         home: "首页",
-        earthdata: "太空数仓™",
+        earthdata: "太空数舱™",
         xbyte: "探索字节™",
         products: "产品与方案",
         media: "媒体库",
@@ -28,21 +28,27 @@ const siteContent = {
             btnText: "探索更多"
         },
         news: [
+           {
+                tag: "市场动态",
+                text: "把算力送上太空！我国发布太空数据中心建设规划方案",
+                link: "阅读详情 &rarr;",
+                url: "https://baijiahao.baidu.com/s?id=1850086926422699552&wfr=spider&for=pc" // 这里可以放具体的新闻链接
+            },
             {
                 tag: "最新动态",
-                text: "AstrByte 成功部署第13个在轨数据节点，开启太空边缘计算新纪元。",
+                text: "AstrByte 成功签约第1个在轨共享存储节点，开启太空存储新纪元。",
                 link: "阅读详情 &rarr;",
                 url: "#" // 这里可以放具体的新闻链接
             },
             {
                 tag: "技术突破",
-                text: "Xbyte 2.0 固件发布：新增深空通信协议支持，延迟降低 40%。",
+                text: "XByte1.0 固件发布：新增太空通信协议支持。",
                 link: "具体内容 &rarr;",
                 url: "#"
             },
             {
                 tag: "合作伙伴",
-                text: "AstrByte 与全球顶尖气象机构达成合作，提供实时卫星云图存储服务。",
+                text: "AstrByte 与之江实验室达成合作，提供数据上传太空服务。",
                 link: "了解更多 &rarr;",
                 url: "#"
             }
@@ -51,14 +57,14 @@ const siteContent = {
             title: "运营数据概览",
             capVal: "10", capLabel: "在轨存储容量", capUnit: "Tbyte",
             dataVal: "216", dataLabel: "在轨数据量", dataUnit: "Gbyte",
-            userVal: "13", userLabel: "已注册用户数", userUnit: "个",
-            uploadVal: "3", uploadLabel: "共计上传数据", uploadUnit: "次"
+            userVal: "6", userLabel: "已注册用户数", userUnit: "个",
+            uploadVal: "1", uploadLabel: "共计上传数据", uploadUnit: "次"
         },
         earthdata: {
-            title: "太空数仓™ (StellaVault™)",
-            meaning: "数据前往太空的意义",
-            description: "不仅仅是存储，更是人类文明的备份。通过独立子域名访问，体验前所未有的安全与永恒。",
-            btnText: "进入太空数仓"
+            title: "太空数舱™ (StellaVault™)",
+            meaning: "近地轨道太空存储体验",
+            description: "数据前往太空的意义，不仅仅是存储，更是人类文明的备份，点击进入“太空数舱”，让你的“数字资产”体验前所未有的安全与永恒。",
+            btnText: "进入太空数舱"
         },
         xbyte: {
             title: "探索字节™ (XByte™)",
@@ -87,12 +93,12 @@ const siteContent = {
     // --- 太空数仓页 (earthdata.html) ---
     earthdata: {
         hero: {
-            title: "太空数仓™ (StellaVault™)",
-            desc: "安全可靠的天空数据中心数据存储和托管服务 将您的重要数据资产安全存储在近地轨道，物理隔离地面自然灾害与人为干扰。"
+            title: "太空数舱™ (StellaVault™)",
+            desc: "近地轨道太空数据存储和托管服务 将您的重要数据资产安全存储在近地轨道，物理隔离地面自然灾害与人为干扰。"
         },
         features: {
-            f1_title: "极致安全", f1_desc: "数据存储于近地轨道，物理隔离地面自然灾害与人为干扰。",
-            f2_title: "全球访问", f2_desc: "依托星链技术，在全球任何角落均可高速访问您的数据资产。",
+            f1_title: "极致安全", f1_desc: "数据存储于太空环境，物理隔离地面自然灾害与人为干扰。",
+            f2_title: "资产托管", f2_desc: "在稀缺的太空存储节点，每一份数据都将获得由国家平台认证的唯一数字身份，转化为可确权、可验证的安全资产",
             f3_title: "永久备份", f3_desc: "为人类文明提供异地容灾备份，数据留存长达百年。"
         },
         operation: {
@@ -103,9 +109,9 @@ const siteContent = {
         },
         login: {
             title: "准备好将您的数据资产放入太空了吗？",
-            subtitle: "访问太空数仓系统需要企业级授权账号",
-            btn: "登录太空数仓™ 系统",
-            domain: "earthdata.space"
+            subtitle: "访问太空数舱™ 系统需要企业级授权账号",
+            btn: "登录太空数舱™ 系统",
+            domain: "stellavault.space"
         }
     },
 
@@ -116,9 +122,10 @@ const siteContent = {
             desc: "连接你与宇宙的私人终端"
         },
         operation: {
-            f1_title: "已激活终端", f1_desc: "5000",
-            f2_title: "来自太空的金句", f2_desc: "1024",
-            f3_title: "绑定IP数量", f3_desc: "12"
+            f1_title: "已激活终端", f1_desc: "3000",
+            f2_title: "绑定IP数量", f2_desc: "3",
+            f3_title: "在轨太空金句", f3_desc: "386",
+            f4_title: "已投放太空金句", f3_desc: "234"
         },
         mobile: {
             title: "选择你的 探索字节™(XByte™) 设备",
@@ -135,16 +142,16 @@ const siteContent = {
         },
         intro: {
             title: "团队介绍",
-            text1: "太空字节成立于2025年，核心团队来自顶尖航天机构与互联网巨头。",
+            text1: "太空字节成立于2025年，核心团队来自国内顶尖的航天企业和人工智能公司。",
             text2: "我们正在重新定义数据中心的边界，将算力和数据推向天空的边缘。"
         },
         contact: {
             title: "联系我们",
             business: "商务合作",
-            email: "business@astrbyte.com",
-            phone: "010-8888 8888",
+            email: "contact@astrbyte.com",
+            phone: "16601920713",
             addrTitle: "公司地址",
-            addr: "北京市海淀区航天科技园 A座 101室"
+            addr: "深圳市宝安区福海街道稔田社区凤塘大道22-13号新田商务中心"
         }
     },
     // ... (前面是 home, earthdata, xbyte, about 等内容) ...
@@ -158,23 +165,32 @@ const siteContent = {
             title: "SGST 星地链路产品",
             desc: "专为高通量卫星数据传输设计，提供极低延迟的星地通信解决方案。支持多频段自适应调制。",
             // 参数表
-            spec_band_label: "频段支持",
-            spec_band_val: "Ka-band / Ku-band",
-            spec_speed_label: "传输速率",
-            spec_speed_val: "最高 10 Gbps",
-            spec_deploy_label: "部署方式",
-            spec_deploy_val: "地面站 / 车载移动端"
+            spec_band_label: "通信速率",spec_band_val: "上行：100Gbps下行：100Gbps",spec_band_renmark:"对称",
+            spec_speed_label: "通信距离",spec_speed_val: "≥1500km，100～1500km可调",spec_speed_remark: "对可兼容星间通信距离",
+            spec_deploy_label: "通信波长",spec_deploy_val: "1540/1563nm",spec_deploy_remark: "兼容星网/千帆标准通信波长",
+            spec_label4: "天线口径",spec_label4_val: "200mm",spec_label4_remark: "收发共口径",
+            spec_label5: "捕获范围",spec_label5_val: "不小于-0.02º～0.02º",spec_label5_remark: "",
+            spec_label6: "最大捕获角速度",spec_label6_val: "不小于0.2º/s",spec_label6_remark: "",
+            spec_label7: "跟踪精度",spec_label7_val: "≤5μmad（3σ）",spec_label7_remark: "@NASDA微振动条件",
+            spec_label8: "捕获方式",spec_label8_val: "无独立信标光",spec_label8_remark: "",
+            spec_label9: "通信误码率",spec_label9_val: "≤1×10-7@100Gbps",spec_label9_remark: "译码后",
+            spec_label10: "重量",spec_label10_val: "≥8kg",spec_label10_remark: "含热控、电缆等",
+            spec_label11: "供电接口",spec_label11_val: "28V",spec_label11_remark: "",
+            spec_label12: "最大功耗",spec_label12_val: "2120W",spec_label12_remark: ""
         },
         astrnode: {
             title: "ASTRNode 载荷产品",
             desc: "在轨边缘计算节点，具备高算力、低功耗特性，支持在太空中直接处理AI推理任务。",
             // 参数表
-            spec_cpu_label: "处理器",
-            spec_cpu_val: "AstrAI Neural Chip V2",
-            spec_power_label: "功耗",
-            spec_power_val: "< 30W",
-            spec_weight_label: "重量",
-            spec_weight_val: "1.2 kg (标准1U)"
+            spec_cpu_label: "存储能力", spec_cpu_val: "20TB/40TB/60TB/80TB/100TB",spec_cpu_remark: "可按20TB每节点扩容",
+            spec_power_label: "计算能力", spec_power_val: "275TOPS",spec_power_remark: "单节点算力能力",
+            spec_weight_label: "内存", spec_weight_val: "64GB",spec_weight_remark: "",
+            spec_label4: "对外接口",spec_label4_val: "网络TCP/IP",spec_label4_remark: "",
+            spec_label5: "供电",spec_label5_val: "28V",spec_label5_remark: "",
+            spec_label6: "重量",spec_label6_val: "3kg",spec_label6_remark: "",
+            spec_label7: "最大功耗",spec_label7_val: "90W",spec_label7_remark: "",
+            spec_label8: "操作系统",spec_label8_val: "9Linux Ubuntu22.04",spec_label8_remark: "K8S虚拟技术",
+            spec_label9: "软件功能",spec_label9_val: "支持容器技术CubeFS，分布式文件系统，支持S3对象存储文件协议，时空网格数据库",spec_label9_remark: "应用（容器）/ 数据隔离设计"
         }
     },
 
@@ -184,16 +200,16 @@ const siteContent = {
         filters: {
             all: "全部",
             story: "用户故事",
-            case: "客户案例",
+            case: "企业成长",
             launch: "发射实录",
             interview: "技术访谈"
         },
         // 视频卡片内容 (这里是静态模拟，实际项目可能由循环生成)
         card1: {
-            tag: "用户故事",
+            tag: "故事",
             title: "数据如何改变农业监测",
             // 示例视频：地球旋转
-            videoUrl: "videos/story.mov"
+            videoUrl: "https://www.douyin.com/root/search/太空字节?modal_id=7571030529580784275&type=video"
         },
         card2: {
             tag: "发射实录",
@@ -202,16 +218,16 @@ const siteContent = {
             videoUrl: "https://static.videezy.com/system/resources/previews/000/000/170/original/Rocket_Launch.mp4"
         },
         card3: {
-            tag: "客户案例",
-            title: "某金融机构的异地容灾方案",
+            tag: "企业成长",
+            title: "太空字节人集合",
              // 示例视频：数据网络
-            videoUrl: "https://static.videezy.com/system/resources/previews/000/004/199/original/Nebula_Blue_Particle_Background_Loop.mp4"
+            videoUrl: "videos/astrobyte_team.mp4"
         },
         card4: {
             tag: "技术访谈",
-            title: "CTO谈下一代星际网络",
+            title: "中美太空数据中心对比",
             // 示例视频：科技连接
-            videoUrl: "https://static.videezy.com/system/resources/previews/000/005/508/original/Plexus_6.mp4"
+            videoUrl: "videos/astrobyte_tech_1.mp4"
         }
     }
 };

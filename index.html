@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="太空字节(AstrByte)官方网站 - 致力于构建星际间的数据高速公路，提供太空数仓、边缘计算载荷及Xbyte个人终端服务。">
+    <meta name="description" content="太空字节(AstrByte)官方网站 - 致力于构建星际间的数据高速公路，提供太空数舱、边缘计算载荷及Xbyte个人终端服务。">
     <meta name="keywords" content="太空数据, 卫星存储, 边缘计算, 人工智能, AstrByte, 太空字节">
     <title>太空字节 太空数据中心运营商 | 首页</title>
     <link rel="stylesheet" href="style.css">
@@ -67,7 +67,7 @@
                 <!-- 增加了 id，移除了 data-key -->
                 <span class="tag" id="news-tag">最新动态</span>
                 <div class="ticker-text" id="news-text">正在加载最新消息...</div>
-                <a href="#" class="read-more" id="news-link">阅读详情 &rarr;</a>
+                <a href="#" class="read-more" id="news-link" target="_blank">阅读详情 &rarr;</a>
             </div>
         </div>
     </section>
@@ -88,12 +88,12 @@
                     <div class="stat-label" data-key="home.stats.dataLabel"></div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-target="13">0</div>
+                    <div class="stat-number" data-target="6">0</div>
                     <div class="stat-unit" data-key="home.stats.userUnit"></div>
                     <div class="stat-label" data-key="home.stats.userLabel"></div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-number" data-target="1">0</div>
                     <div class="stat-unit" data-key="home.stats.uploadUnit"></div>
                     <div class="stat-label" data-key="home.stats.uploadLabel"></div>
                 </div>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <!-- 第四屏：去往太空 (太空数仓) -->
+    <!-- 第四屏：去往太空 (太空数舱) -->
     <section id="earthdata" class="split-section right-text">
         <!-- 这里的图片建议替换为高清视频截图 -->
         <div class="bg-image" style="background-image: url('images/earthdata.jpeg');"></div>
@@ -130,10 +130,22 @@
             <h2 class="section-title" data-key="home.partners.title"></h2>
             <div class="partners-grid">
                 <!-- 模拟Logo位置 -->
-                <div class="partner-logo" data-key="home.partners.partnerA"></div>
-                <div class="partner-logo" data-key="home.partners.partnerB"></div>
-                <div class="partner-logo" data-key="home.partners.partnerC"></div>
-                <div class="partner-logo" data-key="home.partners.partnerD"></div>
+                <!-- <div class="partner-logo" ><img src="images/partner/stardetect.jpeg" alt="星测未来"></div>
+                <div class="partner-logo" data-key="home.partners.partnerB"><img src="images/partnerB.png" alt="合作方B"></div>
+                <div class="partner-logo" data-key="home.partners.partnerC"><img src="images/partnerC.png" alt="合作方C"></div>
+                <div class="partner-logo" data-key="home.partners.partnerD"><img src="images/partnerD.png" alt="合作方D"></div> -->
+            <!-- Logo 1 -->
+                <div class="partner-card"><img src="images/partner/stardetect.png" alt="星测未来" class="partner-img"></div>
+                
+                <!-- Logo 2 -->
+                <div class="partner-card"><img src="images/partner/hagongda.png" alt="哈尔滨工业大学" class="partner-img"></div>
+                
+                <!-- Logo 3 -->
+                <div class="partner-card"><img src="images/partner/zhijianglab.png" alt="之江实验室" class="partner-img"></div>
+                
+                <!-- Logo 4 -->
+                <div class="partner-card"><img src="images/partner/techrightcloud.png" alt="腾瑞云" class="partner-img"></div>
+           
             </div>
         </div>
     </section>
@@ -165,12 +177,14 @@
             </div>
         </div>
     </section>
-<div id="img-modal" class="modal">
+<!-- 新增：图片放大弹窗 (Lightbox) -->
+    <div id="img-modal" class="modal">
         <!-- 关闭按钮 -->
         <span class="close-btn img-close">&times;</span>
         <!-- 用于展示大图的容器 -->
         <img class="modal-content-img" id="img-modal-content">
     </div>
+
     <!-- 底部 Footer -->
     <footer>
         <div class="container footer-content">

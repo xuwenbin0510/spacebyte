@@ -321,15 +321,45 @@ ul { list-style: none; }
 .btn-primary:hover { background: #ddd; }
 
 /* --- 7. Partners --- */
-.partners-section { padding: 100px 0; background: #0a0a0a; text-align: center; }
+.partners-section { 
+    padding: 100px 0; 
+    background: #0a0a0a; 
+    text-align: center; 
+}
 .partners-grid {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    gap: 50px;               /* 卡片之间的间距 */
+    flex-wrap: wrap;         /* 自动换行 */
+    margin-top: 20px;
 }
-.partner-logo {
+/* 新增：Logo 的白色卡片容器 */
+.partner-card {
+    width: 300px;           /* 卡片固定宽度 */
+    height: 150px;          /* 卡片固定高度 */
+    background: #ffffff;    /* 纯白背景：解决Logo自带白底和黑字的问题 */
+    border-radius: 8px;     /* 圆角 */
+    
+    display: flex;          /* 让图片在卡片里居中 */
+    align-items: center;
+    justify-content: center;
+    
+    padding: 15px;          /* 内部留白，防止Logo顶边 */
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+    /* 默认状态下稍微降低不透明度，不抢视觉重心 */
+    opacity: 0.9;
+    border: 1px solid #333; /* 加上微弱边框 */
+}
+/* 卡片悬停效果 */
+.partner-card:hover {
+    opacity: 1;
+    transform: translateY(-5px); /* 整体上浮 */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); /* 发光阴影 */
+    border-color: var(--accent-color); /* 边框变蓝 */
+}
+/* .partner-logo {
     width: 220px;
     height: 100px;
     background: #1a1a1a;
@@ -341,8 +371,35 @@ ul { list-style: none; }
     font-size: 1.2rem;
     transition: 0.3s;
     border: 1px solid #222;
+} */
+ /* Logo 图片专用样式 */
+.partner-img {
+    max-width: 100%;       /* 限制宽度不超过卡片 */
+    max-height: 100%;      /* 限制高度不超过卡片 */
+    width: auto;
+    height: auto;
+    object-fit: contain;   /* 保持图片比例 */
+    
+    /* 这里的滤镜改为：默认黑白 */
+    filter: grayscale(30%);
+    transition: filter 0.3s ease;
 }
-.partner-logo:hover { background: #222; color: #fff; border-color: #555; }
+/* 鼠标悬停交互 */
+.partner-img:hover {
+    filter: grayscale(0%) opacity(1); /* 悬停：恢复彩色 + 不透明 */
+    transform: scale(1.1); /* 轻微放大 */
+}
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .partners-grid {
+        gap: 15px;
+    }
+    .partner-card {
+        width: 140px;  /* 手机上卡片小一点 */
+        height: 70px;
+    }
+}
+/* .partner-logo:hover { background: #222; color: #fff; border-color: #555; } */
 
 /* --- 8. About & Contact --- */
 .about-section { padding: 100px 0; background: #000; border-top: 1px solid #111; }
