@@ -200,34 +200,38 @@ const siteContent = {
         filters: {
             all: "全部",
             story: "用户故事",
-            case: "企业成长",
             launch: "发射实录",
+            team: "企业成长",
             interview: "技术访谈"
         },
         // 视频卡片内容 (这里是静态模拟，实际项目可能由循环生成)
         card1: {
-            tag: "故事",
+            tag: "用户故事",
             title: "数据如何改变农业监测",
             // 示例视频：地球旋转
-            videoUrl: "https://www.douyin.com/root/search/太空字节?modal_id=7571030529580784275&type=video"
+            videoUrl: "https://www.douyin.com/root/search/太空字节?modal_id=7571030529580784275&type=video",
+            coverUrl: "images/media1.jpeg" // 【新增】你的封面路径
         },
         card2: {
             tag: "发射实录",
             title: "ASTR-1 卫星发射全过程",
             // 示例视频：火箭发射
-            videoUrl: "https://static.videezy.com/system/resources/previews/000/000/170/original/Rocket_Launch.mp4"
+            videoUrl: "https://static.videezy.com/system/resources/previews/000/000/170/original/Rocket_Launch.mp4",
+            coverUrl: "images/media2.jpeg" // 【新增】你的封面路径
         },
         card3: {
             tag: "企业成长",
             title: "太空字节人集合",
              // 示例视频：数据网络
-            videoUrl: "videos/astrobyte_team.mp4"
+            videoUrl: "videos/astrobyte_team.mp4",
+            coverUrl: "images/media3.jpeg" // 【新增】你的封面路径
         },
         card4: {
             tag: "技术访谈",
             title: "中美太空数据中心对比",
             // 示例视频：科技连接
-            videoUrl: "videos/astrobyte_tech_1.mp4"
+            videoUrl: "videos/astrobyte_tech_1.mp4",
+            coverUrl: "images/media4.jpeg" // 【新增】你的封面路径
         }
     }
 };

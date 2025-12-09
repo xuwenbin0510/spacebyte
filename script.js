@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const content = keyPath.split('.').reduce((prev, curr) => prev ? prev[curr] : null, siteContent);
 
             if (content) {
-                if (el.tagName === 'P' || el.tagName === 'DIV' || el.tagName === 'SPAN' || el.tagName.startsWith('H')) {
+                 // 【核心修改在这里】
+                if (el.tagName === 'IMG') {
+                    // 如果是图片标签，修改 src 属性
+                    el.src = content;
+                }else if (el.tagName === 'P' || el.tagName === 'DIV' || el.tagName === 'SPAN' || el.tagName.startsWith('H')) {
                     el.innerHTML = content;
                 } else {
                     el.innerText = content;

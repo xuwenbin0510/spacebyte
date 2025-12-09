@@ -32,8 +32,8 @@
         <div class="filter-bar">
             <button class="filter-btn active" data-filter="all" data-key="media.filters.all"></button>
             <button class="filter-btn" data-filter="story" data-key="media.filters.story"></button>
-            <button class="filter-btn" data-filter="case" data-key="media.filters.case"></button>
-            <button class="filter-btn" data-filter="launch" data-key="media.filters.launch"></button>  
+            <button class="filter-btn" data-filter="launch" data-key="media.filters.launch"></button>
+            <button class="filter-btn" data-filter="team" data-key="media.filters.team"></button>  
             <button class="filter-btn" data-filter="interview" data-key="media.filters.interview"></button>   
         </div>
 
@@ -41,7 +41,9 @@
         <div class="media-grid">
             <!-- 视频卡片 1 用户故事-->
             <div class="media-card scroll-reveal"  data-category="story" data-video-key="media.card1.videoUrl">
-                <img src="images/media1.jpeg" class="media-thumb" alt="Video Thumb">
+                <!-- <img src="images/media1.jpeg" class="media-thumb" alt="Video Thumb"> -->
+                <!-- 【修改这里】移除了原来的 src，加了 data-key -->
+                <img data-key="media.card1.coverUrl" class="media-thumb" alt="视频封面">
                 <div class="play-icon">▶</div>
                 <div class="media-info">
                     <span class="media-tag" data-key="media.card1.tag"></span>
@@ -50,16 +52,20 @@
             </div>
             <!-- 视频卡片 2 发射实录-->
             <div class="media-card scroll-reveal" data-category="launch" data-video-key="media.card2.videoUrl">
-                <img src="images/media2.jpeg" class="media-thumb" alt="Video Thumb">
+                <!-- <img src="images/media2.jpeg" class="media-thumb" alt="Video Thumb"> -->
+                <!-- 【修改这里】移除了原来的 src，加了 data-key -->
+                <img data-key="media.card2.coverUrl" class="media-thumb" alt="视频封面">
                 <div class="play-icon">▶</div>
                 <div class="media-info">
                     <span class="media-tag" data-key="media.card2.tag"></span>
                     <h4 data-key="media.card2.title"></h4>
                 </div>
             </div>
-            <!-- 视频卡片 3 客户案例-->
-            <div class="media-card scroll-reveal" data-category="case" data-video-key="media.card3.videoUrl">
-                <img src="images/media3.jpeg" class="media-thumb" alt="Video Thumb">
+            <!-- 视频卡片 3 企业成长-->
+            <div class="media-card scroll-reveal" data-category="team" data-video-key="media.card3.videoUrl">
+                <!-- <img src="images/media3.jpeg" class="media-thumb" alt="Video Thumb"> -->
+                <!-- 【修改这里】移除了原来的 src，加了 data-key -->
+                <img data-key="media.card3.coverUrl" class="media-thumb" alt="视频封面">
                 <div class="play-icon">▶</div>
                 <div class="media-info">
                     <span class="media-tag" data-key="media.card3.tag"></span>
@@ -68,7 +74,9 @@
             </div>
              <!-- 视频卡片 4 技术访谈-->
              <div class="media-card scroll-reveal" data-category="interview" data-video-key="media.card4.videoUrl">
-                <img src="images/media4.jpeg" class="media-thumb" alt="Video Thumb">
+                <!-- <img src="images/media4.jpeg" class="media-thumb" alt="Video Thumb"> -->
+                <!-- 【修改这里】移除了原来的 src，加了 data-key -->
+                <img data-key="media.card4.coverUrl" class="media-thumb" alt="视频封面">
                 <div class="play-icon">▶</div>
                 <div class="media-info">    
                     <span class="media-tag" data-key="media.card4.tag"></span>
